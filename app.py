@@ -23,6 +23,10 @@ class HistorialCliente(db.Model):
     servicio = db.Column(db.String(200), nullable=False)
     costo = db.Column(db.Numeric(10, 2), nullable=False)
 
+@app.route('/')
+def home():
+    return "API Podología funcionando", 200
+
 @app.route('/historial', methods=['GET'])
 def get_historial():
     registros = HistorialCliente.query.all()
