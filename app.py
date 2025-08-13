@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configura la conexión a tu base de datos PostgreSQL
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:SYZNB0gZP0xo6et2nfykrzd1DKMLIrTx@dpg-d2dtfnidbo4c73815mr0-a.render.com:5432/historial_clientes'
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgre:SYZNB0gZP0xo6et2nfykrzd1DKMLIrTx@dpg-d2dtfnidbo4c73815mr0-a.oregon-postgres.render.com:5432/historial_clientes"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
